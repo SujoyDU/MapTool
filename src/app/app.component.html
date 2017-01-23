@@ -1,3 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<!--<h1>-->
+<!--{{title}}-->
+<!--</h1>-->
+<!--<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom] = "zoom">-->
+<!--<sebm-google-map-marker [latitude]="lat" [longitude]="lng" [visible]="true" [title]="titleOFMarker" [label] = "labelOfMarker"></sebm-google-map-marker>-->
+<!--</sebm-google-map>-->
+
+
+<div class="container">
+  <h1>Angular 2 + Google Maps Places Autocomplete</h1>
+  <div class="form-group">
+    <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text"
+           class="form-control" #search [formControl]="searchControl">
+  </div>
+  <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+    <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+  </sebm-google-map>
+</div>
