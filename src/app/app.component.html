@@ -13,6 +13,10 @@
            class="form-control" #search [formControl]="searchControl">
   </div>
   <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+
     <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+
+    <sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>
+
   </sebm-google-map>
 </div>

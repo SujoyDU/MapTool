@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 import { AgmCoreModule } from "angular2-google-maps/core"
 
 import { AppComponent } from './app.component';
+import { DirectionsServiceDirective } from './directions-service.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DirectionsServiceDirective
   ],
   imports: [
     BrowserModule,
