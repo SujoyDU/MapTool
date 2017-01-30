@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
   titleOfMarker:string = "Dohatec";
   labelOfMarker:string = "Dohatec CA";
 
+  showDis:boolean = false;
 
   origin = { longitude: 90.412398, latitude: 23.734718 };  // its a example aleatory position
   destination = { longitude: 90.412398, latitude: 23.704718 };  // its a example aleatory position
@@ -111,6 +112,18 @@ export class AppComponent implements OnInit {
     //   })
     // });
 
+  }
+  showDistance() {
+    this.showDis = true;
+    // this.origin =null;
+    // this.destination = null;
+  }
+  savePoints(pointType) {
+    let pointToMap = { longitude: this.lng, latitude: this.lat };
+    if(pointType == 'origin') {
+      this.origin = pointToMap;
+    }
+    else this.destination = pointToMap;
   }
   private setCurrentPosition() {
     if ("geolocation" in navigator) {

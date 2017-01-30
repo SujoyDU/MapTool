@@ -6,17 +6,35 @@
 <!--</sebm-google-map>-->
 
 
-<div class="container">
-  <h1>Angular 2 + Google Maps Places Autocomplete</h1>
-  <div class="form-group">
-    <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text"
-           class="form-control" #search [formControl]="searchControl">
-  </div>
-  <sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
+<!--<div class="container">-->
+  <!--<h1>Angular 2 + Google Maps Places Autocomplete</h1>-->
+  <!--<div class="form-group">-->
+    <!--<input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text"-->
+           <!--class="form-control" #search [formControl]="searchControl">-->
+    <!--<button class="btn btn-primary" type="button" (click)="savePoints('origin')">Origin Button</button>-->
+    <!--<button class="btn btn-primary" type="button" (click)="savePoints('destination')">Destination Button</button>-->
+    <!--<button class="btn btn-primary" type="button" (click)="showDistance()">Show Distance</button>-->
+  <!--</div>-->
+  <!--<sebm-google-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">-->
 
-    <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+    <!--<sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>-->
 
-    <sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>
+    <!--<p *ngIf = "showDis">-->
+      <!--<sebm-google-map-directions [origin]="origin" [destination]="destination"></sebm-google-map-directions>-->
+    <!--</p>-->
+  <!--</sebm-google-map>-->
 
-  </sebm-google-map>
+  <!--&lt;!&ndash;<sebm-google-map-directions> </sebm-google-map-directions>&ndash;&gt;-->
+
+<!--</div>-->
+<!--<div>-->
+  <!--<app-line-chart></app-line-chart>-->
+<!--</div>-->
+<div>
+  <app-composite-chart></app-composite-chart>
 </div>
+
+<div>
+  <app-grouped-chart></app-grouped-chart>
+</div>
+

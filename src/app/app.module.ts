@@ -6,12 +6,18 @@ import { AgmCoreModule } from "angular2-google-maps/core"
 
 import { AppComponent } from './app.component';
 import { DirectionsServiceDirective } from './directions-service.directive';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { CompositeChartComponent } from './composite-chart/composite-chart.component';
+import { GroupedChartComponent } from './grouped-chart/grouped-chart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DirectionsServiceDirective
+    DirectionsServiceDirective,
+    LineChartComponent,
+    CompositeChartComponent,
+    GroupedChartComponent
   ],
   imports: [
     BrowserModule,
